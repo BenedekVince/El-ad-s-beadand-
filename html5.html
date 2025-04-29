@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 API Példák</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="html5.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="table.html">Táblázat</a></li>
+            <li><a href="html5.html" class="active">HTML5 API</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react.html">React</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>HTML5 API példák</h2>
+
+        <h3>Web Storage (localStorage példája)</h3>
+        <h3>Drag and Drop API</h3>
+        <h3>Server-Sent Events</h3>
+<button onclick="startSSE()">📡 Indítsd el az eseményeket</button>
+<div id="sse-output"></div>
+<h3>SVG rajzolás</h3>
+<svg id="svgCanvas" width="200" height="100" style="border:1px solid black;">
+</svg>
+<button onclick="drawSVG()">🔷 Rajzolás</button>
+
+<div id="drag-container">
+    <div id="draggable" draggable="true">🏀 Húzz el!</div>
+    <div id="drop-zone">Ide húzd!</div>
+</div>
+
+        <input type="text" id="storageInput" placeholder="Írj be valamit...">
+        <button onclick="saveToLocalStorage()">Mentés</button>
+        <p id="storageOutput"></p>
+
+        <h3>Geolocation API</h3>
+        <button onclick="getLocation()">📍 Helymeghatározás</button>
+        <p id="locationOutput"></p>
+
+        <h3>Canvas rajzolás</h3>
+        <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"></canvas>
+        <button onclick="drawCanvas()">🎨 Rajzolás</button>
+
+    </main>
+
+    <footer>
+        <p>Készítők: [Nevek] | Neptun kód: [Kódok]</p>
+    </footer>
+</body>
+</html>
