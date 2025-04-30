@@ -1,5 +1,6 @@
 {
-  "name": "react-hazi",
+  "homepage": "https://benedekvince.github.io/React-App1/" ,
+   "name": "react-hazi",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
